@@ -118,3 +118,6 @@ Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
 <li data-quantity="optional 150kg" data-meat>Bacon bits</li>
 <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
 ```
+
+
+Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
