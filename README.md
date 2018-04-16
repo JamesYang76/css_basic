@@ -85,12 +85,20 @@ div > p {
 ### Attribute selectors
 #### Presence and value attribute selectors
 `[attr]` : This selector will select all elements with the attribute attr, whatever its value.\
-`[attr=val]` : This selector will select all elements with the attribute attr, but only if its value is val.
+`[attr=val]` : This selector will select all elements with the attribute attr, but only if its value is val.\
+`[attr~=val]`: select all elements with the attribute attr including val.
 ```html
 <style>
   [data-vegetable] { color: green; }
+  [data-vegetable="liquid"] { background-color: goldenrod;}
+  [data-vegetable~="spicy"] { color: red; }
   input[type=text] {background:red;}
 </style>
 <input type="text" value="red"></input> 
 <input type="password"/>
+<ul>
+  <li data-quantity="1kg" data-vegetable>Tomatoes</li>
+  <li data-quantity="3" data-vegetable="liquid">Onions liquid</li>
+  <li data-quantity="3" data-vegetable="liquid spicy">Red spicy not liquid</li>
+<ul>   
 ```
