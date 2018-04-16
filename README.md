@@ -37,3 +37,48 @@
 body,p,h1,h2,h3,h4,h5,h6 {margin:0; paddig:0}
 ```
 #### Descendant selectors
+`A B`: Any element matching B that is a descendant of an element matching A (that is, a child, or a child of a child, etc.).
+```html
+<style>
+div p {
+    background-color: yellow;
+}
+</style>
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <span><p>Paragraph 2 in the div.</p></span>
+</div>
+```
+#### Child selector
+`A > B` : Any element matching B that is a direct child of an element matching A.
+```html
+<style>
+div > p {
+    background-color: yellow;
+}
+</style>
+<div>
+  <p>Paragraph yellow</p>
+   <span><p>Paragraph not yellow</p></span>
+</div>
+```
+#### Adjacent sibling selector
+`A + B` : Any element matching B that is the next sibling of an element matching A (that is, the next child of the same parent).
+```html
+<style>
+   h1 + h2 { color: red;}
+</style>
+<h1> header </h1>
+<h2> red </h2>
+<h2> not red </h2>
+```
+#### General sibling selector
+`A ~ B` : Any element matching B that is one of the next siblings of an element matching A (that is, one of the next children of the same parent).
+```html
+<style>
+   h1 ~ h2 { color: red;}
+</style>
+<h1> header </h1>
+<h2> red </h2>
+<h2> red </h2>
+```
