@@ -102,3 +102,8 @@ div > p {
   <li data-quantity="3" data-vegetable="liquid spicy">Red spicy not liquid</li>
 <ul>   
 ```
+#### Substring value attribute selectors
+`[attr|=val]` : This selector will select all elements with the attribute attr for which the value is exactly val or starts with val- (careful, the dash here isn't a mistake, this is to handle language codes.)\
+`[attr^=val]` : This selector will select all elements with the attribute attr for which the value starts with val.\
+[attr$=val] : This selector will select all elements with the attribute attr for which the value ends with val.\
+`[attr*=val]` : This selector will select all elements with the attribute attr for which the value contains the string val (unlike `[attr~=val]`, this selector doesn't treat spaces as value separators but as part of the attribute value.)
