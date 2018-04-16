@@ -82,3 +82,15 @@ div > p {
 <h2> red </h2>
 <h2> red </h2>
 ```
+### Attribute selectors
+#### Presence and value attribute selectors
+`[attr]` : This selector will select all elements with the attribute attr, whatever its value.\
+`[attr=val]` : This selector will select all elements with the attribute attr, but only if its value is val.
+```html
+<style>
+  [data-vegetable] { color: green; }
+  input[type=text] {background:red;}
+</style>
+<input type="text" value="red"></input> 
+<input type="password"/>
+```
