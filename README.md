@@ -105,5 +105,16 @@ div > p {
 #### Substring value attribute selectors
 `[attr|=val]` : This selector will select all elements with the attribute attr for which the value is exactly val or starts with val- (careful, the dash here isn't a mistake, this is to handle language codes.)\
 `[attr^=val]` : This selector will select all elements with the attribute attr for which the value starts with val.\
-[attr$=val] : This selector will select all elements with the attribute attr for which the value ends with val.\
+`[attr$=val]` : This selector will select all elements with the attribute attr for which the value ends with val.\
 `[attr*=val]` : This selector will select all elements with the attribute attr for which the value contains the string val (unlike `[attr~=val]`, this selector doesn't treat spaces as value separators but as part of the attribute value.)
+```html
+<style>
+[lang|=fr] { font-weight: bold; }
+[data-quantity^="optional"] { opacity: 0.5;}
+[data-quantity$="kg"] { font-weight: bold; }
+[data-vegetable*="not spicy"] { color: green; }
+</style>
+Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
+<li data-quantity="optional 150kg" data-meat>Bacon bits</li>
+<li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
+```
