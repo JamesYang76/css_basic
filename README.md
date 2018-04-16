@@ -86,7 +86,7 @@ div > p {
 #### Presence and value attribute selectors
 `[attr]` : This selector will select all elements with the attribute attr, whatever its value.\
 `[attr=val]` : This selector will select all elements with the attribute attr, but only if its value is val.\
-`[attr~=val]`: select all elements with the attribute attr including val.
+`[attr~=val]`: This selector will select all elements with the attribute attr, but only if the value val is one of a space-separated list of values contained in attr's value, for example a single class in a space-separated list of classes.
 ```html
 <style>
   [data-vegetable] { color: green; }
