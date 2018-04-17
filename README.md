@@ -147,10 +147,47 @@ Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
  </div>
 ```
 ```html
+<!-- :not() -->
 <style>
   input:not([type=password]) { background:red; }
 </style>
 <input type="text"/>
 <input type="password"/>  
+```
+```html
+<!--
+matches one or more elements of a given type, based on their position among a group of siblings.
+-->
+<style>
+   ul {overflow:hidden;}
+   li { list-style:none;float:left;padding: 15px;}
+   li:first-child { border-radius: 10px 0 0 10px;}  
+   li:last-child { border-radius: 0 10px 10px 0;}  
+   li:nth-child(2n+1) { background-color: #800000} 
+   li:nth-child(2n) { background-color: #FF0003}
+   li:nth-last-child(1) { color: blue}
+</style>
+
+<ul>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+    <li>Forth</li>
+    <li>Fifth blue</li>
+</ul>
+```
+```html
+<style>
+ h1:first-of-type { color:red }
+ h1:last-of-type  { color:green }
+ /* Even paragraphs */
+ p:nth-of-type(2n) { color: blue;}
+</style>
+<h1>Red</h1>
+<h1> Normal </h1>
+<h1> Green </h1>
+<p> Para </p>
+<p> Blue Para </p>
+
 ```
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
