@@ -191,7 +191,18 @@ matches one or more elements of a given type, based on their position among a gr
 
 ```
 #### Pseudo-elements
+```html
+<style>
+   p { counter-increment: rint;}
+   p::first-letter { font-size: 3em;}
+   p::first-line { color: red;}
+   p::before {content: counter(rint) ".";}
+   p::after { content: " - " attr(data-page) " page"; }
+</style>
 
+<p data-page="12"> Para </p>
+<p data-page="212"> Blue Para </p>
+```
 
 
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
