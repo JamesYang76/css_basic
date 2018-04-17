@@ -146,5 +146,11 @@ Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
    <input type="text" placeholder="enabled"/>
  </div>
 ```
-
+```html
+<style>
+  input:not([type=password]) { background:red; }
+</style>
+<input type="text"/>
+<input type="password"/>  
+```
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
