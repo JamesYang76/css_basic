@@ -109,15 +109,42 @@ div > p {
 `[attr*=val]` : This selector will select all elements with the attribute attr for which the value contains the string val (unlike `[attr~=val]`, this selector doesn't treat spaces as value separators but as part of the attribute value.)
 ```html
 <style>
-[lang|=fr] { font-weight: bold; }
-[data-quantity^="optional"] { opacity: 0.5;}
-[data-quantity$="kg"] { font-weight: bold; }
-[data-vegetable*="not spicy"] { color: green; }
+   [lang|=fr] { font-weight: bold; }
+   [data-quantity^="optional"] { opacity: 0.5;}
+   [data-quantity$="kg"] { font-weight: bold; }
+   [data-vegetable*="not spicy"] { color: green; }
 </style>
+
 Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
 <li data-quantity="optional 150kg" data-meat>Bacon bits</li>
 <li data-quantity="700g" data-vegetable="not spicy like chili">Red pepper</li>
 ```
+### Pseudo-classes and pseudo-elements
+#### Pseudo-classes
+```html
+<style>
+  a:link { color: blue; }          /* Unvisited links */
+  a:visited { color: purple; }     /* Visited links */
+  a:hover { background: yellow; text-decoration: none; }  /* User hovers */
+  a:active { color: lime; }        /* Active links- when click */
+</style>
 
+<a href="#">This link will turn lime while you click on it.</a>
+```
+```html
+<style>
+  input[type="checkbox"]:checked + div { height:0px; }
+  div { overflow: hidden; }
+  input[type="text"]:disabled {background: #ccc;}
+  input[type="text"]:enabled {background:  blue;}
+  input[type="text"]:focus {background-color: orange;}
+</style>
+
+ <input type="checkbox"/>
+ <div>
+  	<input type="text" placeholder="Name" disabled/>
+   <input type="text" placeholder="enabled"/>
+ </div>
+```
 
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
