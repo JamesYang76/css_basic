@@ -142,7 +142,7 @@ Ingredients for my recipe: <i lang="fr-FR">Poulet basquaise</i>
 
  <input type="checkbox"/>
  <div>
-  	<input type="text" placeholder="Name" disabled/>
+   <input type="text" placeholder="Name" disabled/>
    <input type="text" placeholder="enabled"/>
  </div>
 ```
