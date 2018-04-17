@@ -198,10 +198,13 @@ matches one or more elements of a given type, based on their position among a gr
    p::first-line { color: red;}
    p::before {content: counter(rint) ".";}
    p::after { content: " - " attr(data-page) " page"; }
+   
+   a:link::after {content: ' - ' attr(href);}
 </style>
 
 <p data-page="12"> Para </p>
 <p data-page="212"> Blue Para </p>
+<a href = "https://github.com/">Github</a>
 ```
 
 
