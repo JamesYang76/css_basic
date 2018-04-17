@@ -190,4 +190,8 @@ matches one or more elements of a given type, based on their position among a gr
 <p> Blue Para </p>
 
 ```
+#### Pseudo-elements
+
+
+
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
