@@ -279,7 +279,25 @@ div#two {
 </style>
 ```
 
+## Font
+#### font-size
+```html
+<style>
+.a { font-size: 32px; }
+.b { font-size: 2em;}
+.b { font-size: large;}
+}
+</style>
+```
+#### font-family
+If there is no font, css find second font which is on the list in font-family
+```html
+<style>
+   .font_arial {font-family: 'no font',Arial }
+</style>
 
+<p class ="font_aria> Lorem ipsum </p>
+```
 
 
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
