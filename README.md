@@ -280,12 +280,13 @@ div#two {
 ```
 
 ## Font
-#### font-size
+#### font-size,style and weight
 ```html
 <style>
 .a { font-size: 32px; }
 .b { font-size: 2em;}
-.b { font-size: large;}
+.font_italic { font-style: italic;}
+.font_bold { font-weight: bold;}
 }
 </style>
 ```
