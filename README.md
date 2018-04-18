@@ -261,14 +261,14 @@ for border-box, it points to  conent width + 2x(margin)
 ```
 ```html
 <style>
-div#1 {
+div#one {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
     width: 100px; /* only point to content width*/
     height: 100px;
 }
-div#2 {
+div#two {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
