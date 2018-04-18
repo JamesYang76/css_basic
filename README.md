@@ -229,7 +229,7 @@ p.ex1 {display: none;}
 </div>
 ```
 #### display:block
-Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+Displays an element as a block element/ It starts on a new line, and takes up the whole width.
    
 #### display:inline and inline-block
 `display:inline`: Any height and width properties will have no effect, only left and right margin works\
