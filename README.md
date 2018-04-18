@@ -209,7 +209,6 @@ matches one or more elements of a given type, based on their position among a gr
 
 ## Box
 
-
 ### Display
 #### display:none and visibility: hidden
 `display:none`: a tag does not take place, while `visibility: hidden`: a tag takes place.
@@ -225,7 +224,8 @@ p.ex1 {display: none;}
  Lorem ipsum dolor sit amet <p class="ex1">No place</p> Vestibulum volutpat tellus diam
 </div>
 <div>
- Lorem ipsum dolor sit amet <p class="ex2">Just Take Play like block with no contents</p> Vestibulum volutpat tellus diam
+ Lorem ipsum dolor sit amet <p class="ex2">Just Take Play like block with no contents</p> 
+ Vestibulum volutpat tellus diam
 </div>
 ```
 #### display:block
@@ -235,9 +235,50 @@ Displays an element as a block element/ It starts on a new line, and takes up th
 `display:inline`: Any height and width properties will have no effect, only left and right margin works\
 `display:inline-block`: width/height and margin including top,bottom,left,right can be applied.
 
-### margin and padding
-Total width  : width + 2x(margin + border+padding)\
-Total height : height +2x(margin + border+padding
+### box size
+#### padding and margin
+The padding sets the width of the padding(from inside border to content)\
+The margin sets the width of the outer area surrounding the CSS box(from out side border)
+```html
+<style>
+ div {
+    margin: 0 30px;  /*top bottom, left right*/
+    padding: 0 30px;  /*top bottom, left right*/
+</style>
+```
+#### box-size
+```text
+box-sizing: content-box : default 
+Total width  : content width + 2x(margin + border+padding)
+Total height : content height +2x (margin + border+padding)
+
+box-sizing: border-box`
+Total width  : width + 2x(margin)
+Total height : height +2x (margin)
+
+i.e, for content-box, css property width or height points to only content width or height,
+for border-box, it points to  conent width + 2x(margin)
+```
+```html
+<style>
+div#1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 100px; /* only point to content width*/
+    height: 100px;
+}
+div#2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;  /*points to contend width + left and right margin) */
+    height: 100px;
+    box-sizing: border-box;
+}
+</style>
+```
+
 
 
 
