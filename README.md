@@ -207,7 +207,7 @@ matches one or more elements of a given type, based on their position among a gr
 <a href = "https://github.com/">Github</a>
 ```
 ### Display
-#### display:none and visivility =:hidden
+#### display:none and visibility: hidden
 `display:none`: a tag does not take place, while `visibility: hidden`: a tag takes place.
 
 ```html
