@@ -206,6 +206,10 @@ matches one or more elements of a given type, based on their position among a gr
 <p data-page="212"> Blue Para </p>
 <a href = "https://github.com/">Github</a>
 ```
+
+## Box
+
+
 ### Display
 #### display:none and visibility: hidden
 `display:none`: a tag does not take place, while `visibility: hidden`: a tag takes place.
@@ -224,8 +228,17 @@ p.ex1 {display: none;}
  Lorem ipsum dolor sit amet <p class="ex2">Just Take Play like block with no contents</p> Vestibulum volutpat tellus diam
 </div>
 ```
+#### display:block
+Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+   
 #### display:inline and inline-block
-`display:inline`: width and height are not applied, only left and right margin works\
+`display:inline`: Any height and width properties will have no effect, only left and right margin works\
 `display:inline-block`: width/height and margin including top,bottom,left,right can be applied.
+
+### margin and padding
+Total width  : width + 2x(margin + border+padding)\
+Total height : height +2x(margin + border+padding
+
+
 
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
