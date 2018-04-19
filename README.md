@@ -244,6 +244,7 @@ The margin sets the width of the outer area surrounding the CSS box(from out sid
  div {
     margin: 0 30px;  /*top bottom, left right*/
     padding: 0 30px;  /*top bottom, left right*/
+  }
 </style>
 ```
 #### box-size
