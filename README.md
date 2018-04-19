@@ -300,7 +300,10 @@ If there is no font, css find second font which is on the list in font-family
 <p class ="font_aria> Lorem ipsum </p>
 ```
 #### line-height
-`line-height` set height of font, but it is used for alignment of vertical.
+`line-height` set height of font, but it is used for alignment of vertical.\
+This value also take an affect on height of element\
+default value is `normal`\
+
 ```html
 <style>
 .font_big { font-size: 2em; }
@@ -326,6 +329,7 @@ If there is no font, css find second font which is on the list in font-family
    <a href="#" class="font_big font_italic font_bold font_center">Click</a>
 </div>
 ```   
-
-
+#### text-align
+describe how inline content like text is aligned in its parent block element
+value is `left, right,center,justify`
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
