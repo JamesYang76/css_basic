@@ -339,6 +339,34 @@ If a elment and the next element have `float`, the next elment width does not ta
 <span class="box blue">test</span>
 <div class="float_right box blue"></div>
 ```
+#### One true layout
+`overflow:hidden` should be applied to the parent whose child has float property.
+```html
+<style>
+   body {width:960px;margin:0 auto;}
+   #aside { width:200px; float: left;}
+   #section { width:760px;float: left;}
+   #wrap {overflow: hidden;}
+</style>
+<div id="header"></div>
+<div id="navigation"></div>
+<div id="wrap">
+   <div id="aside">
+   </div>
+   <div id="section">
+   </div>
+</div>
+<div id="footer"></div>
+```
+#### clear
+The clear property specifies on which sides of an element floating elements are not allowed to float.
+```html
+<style>
+   ...
+   #footer { clear:both;}
+</style>
+ ...
+```
 
 ## Font
 #### font-size,style and weight
