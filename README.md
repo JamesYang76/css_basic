@@ -279,14 +279,35 @@ div#two {
 </style>
 ```
 ### position
-`static`:the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect.
-`relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. 
-`absolute` : the element is positioned relative to its first positioned (not static) ancestor element
-`fixed` : the element is positioned relative to the browser window
+`static`:the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect.\
+`relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.\ 
+`absolute` : the element is positioned relative to its first positioned (not static) ancestor element\
+`fixed` : the element is positioned relative to the browser window\
 `sticky`: the element is positioned based on the user's scroll position
 
 #### abolute and relative
+If a child element has a `abolute` postion, the parent does not take place.
+```html
+<style>
+body > div {
+  border: 1px solid black;
+}
+.box {
+   width: 100px;height: 100px;position: absolute;
+}
+.red { background-color: red; left: 10px; top: 10px; }
+.green {background-color: green; left: 50px; top: 50px; }
+.blue {background-color: blue; left: 90px; top: 90px; }
+</style>
 
+<h1> test </h1>
+<div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</div>
+<h1> bottom test </h1>
+```
 
 ## Font
 #### font-size,style and weight
