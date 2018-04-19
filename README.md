@@ -209,7 +209,7 @@ matches one or more elements of a given type, based on their position among a gr
 
 ## Box
 
-### Display
+### display
 #### display:none and visibility: hidden
 `display:none`: a tag does not take place, while `visibility: hidden`: a tag takes place.
 
@@ -278,6 +278,15 @@ div#two {
 }
 </style>
 ```
+### position
+`static`:the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect.
+`relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. 
+`absolute` : the element is positioned relative to its first positioned (not static) ancestor element
+`fixed` : the element is positioned relative to the browser window
+`sticky`: the element is positioned based on the user's scroll position
+
+#### abolute and relative
+
 
 ## Font
 #### font-size,style and weight
