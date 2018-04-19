@@ -299,6 +299,33 @@ If there is no font, css find second font which is on the list in font-family
 
 <p class ="font_aria> Lorem ipsum </p>
 ```
+#### line-height
+`line-height` set height of font, but it is used for alignment of vertical.
+```html
+<style>
+.font_big { font-size: 2em; }
+.font_italic { font-style: italic; }
+.font_bold { font-weight: bold; }
+.font_center { text-align:center; }
+
+.button {
+   width:150px;
+   height:70px; /* for vertical alignment, height and line-height have the same height*/
+   background-color: #FF6A00;
+   border: 10px solid #FFFFFF;
+   border-radius:30px; box-shadow: 5px 5px 5px #A9A9A9;
+}
+
+.button > a {
+   display:block;
+   line-height: 70px; /* for vertical alignment, height and line-height have the same height*/
+   text-decoration:none;
+}
+</style>
+<div class="button">
+   <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+</div>
+```   
 
 
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
