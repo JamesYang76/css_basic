@@ -292,6 +292,7 @@ It the parent has a static postion, child is not positioned according to the par
 <style>
 body > div {
   border: 1px solid black;
+}
 .box {
    width: 100px;height: 100px;position: absolute;
 }
@@ -341,7 +342,7 @@ If there is no font, css find second font which is on the list in font-family
 #### line-height
 `line-height` set height of font, but it is used for alignment of vertical.\
 This value also take an affect on height of element\
-default value is `normal`\
+default value is `normal`
 
 ```html
 <style>
