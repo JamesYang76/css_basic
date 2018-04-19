@@ -279,6 +279,8 @@ div#two {
 }
 </style>
 ```
+
+## CSS Positioning
 ### position
 `static`:the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect.\
 `relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.\
@@ -320,6 +322,24 @@ body > div {
  }
 </style>   
 ```
+### float
+#### left and right
+If a elment has `float` and the next element has no `float`, the next elment width includes the width of the element which has the float because block takes place whole line.\
+If a elment and the next element have `float`, the next elment width does not take whole line.
+```html
+<style>
+ .float_left {float: left;}
+ .float_right { float: right; }
+  .box { width: 100px; height: 100px; }
+ .red { background-color: red;}
+ .blue { background-color: blue;}
+</style>
+
+<div class="float_left box red"></div>
+<span class="box blue">test</span>
+<div class="float_right box blue"></div>
+```
+
 ## Font
 #### font-size,style and weight
 ```html
