@@ -280,18 +280,18 @@ div#two {
 ```
 ### position
 `static`:the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect.\
-`relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.\ 
+`relative`: the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.\
 `absolute` : the element is positioned relative to its first positioned (not static) ancestor element\
 `fixed` : the element is positioned relative to the browser window\
 `sticky`: the element is positioned based on the user's scroll position
 
 #### abolute and relative
-If a child element has a `abolute` postion, the parent does not take place.
+If a child element has a `abolute` postion, the parent does not take place\
+It the parent has a static postion, child is not positioned according to the parent.
 ```html
 <style>
 body > div {
   border: 1px solid black;
-}
 .box {
    width: 100px;height: 100px;position: absolute;
 }
@@ -308,7 +308,16 @@ body > div {
 </div>
 <h1> bottom test </h1>
 ```
-
+To iron out them, the parent has to have height and relative position. 
+```html
+<style>
+body > div {
+     border: 1px solid black;
+     height: 100px; width: 400px;
+     position: relative;
+ }
+</style>   
+```
 ## Font
 #### font-size,style and weight
 ```html
