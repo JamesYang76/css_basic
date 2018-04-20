@@ -420,6 +420,21 @@ If there is no font, css find second font which is on the list in font-family
 
 <p class ="font_aria> Lorem ipsum </p>
 ```
+#### @font-face
+Allows authors to specify fonts
+```html
+<style type="text/css">
+/*online url(), and locally local()*/
+  
+@font-face {
+  font-family: "Bitstream Vera Serif Bold your font";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf"); format('ttf');
+}
+  
+body { font-family: "Bitstream Vera Serif Bold your font", serif }
+</style>
+```
+
 #### line-height
 `line-height` set height of font, but it is used for alignment of vertical.\
 This value also take an affect on height of element\
