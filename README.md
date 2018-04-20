@@ -1,5 +1,25 @@
 # css_basic
 
+## Insert CSS
+### External Style Sheet
+```html
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  @import url(yourstyle.css)
+</head>
+```
+### Internal Style Sheet
+```html
+<head>
+   <style>
+    body { background-color: linen;}
+</style>
+</head>   
+```
+### Inline Styles
+```html
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+```
 ## Selector
 ### Combinations of Classes and IDs
 #### ID and Class Selector
