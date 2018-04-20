@@ -252,13 +252,16 @@ The margin sets the width of the outer area surrounding the CSS box(from out sid
 box-sizing: content-box : default 
 Total width  : content width + 2x(margin + border+padding)
 Total height : content height +2x (margin + border+padding)
+width:   content width 
+height:  content height
 
 box-sizing: border-box`
-Total width  : width + 2x(margin)
-Total height : height +2x (margin)
+width : Total width
+height: Total height
+
 
 i.e, for content-box, css property width or height points to only content width or height,
-for border-box, it points to  conent width + 2x(margin)
+for border-box, it points to  total width or height
 ```
 ```html
 <style>
@@ -266,14 +269,14 @@ div#one {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
-    width: 100px; /* only point to content width*/
+    width: 100px; /* point to only content width*/
     height: 100px;
 }
 div#two {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
-    width: 100px;  /*points to contend width + left and right margin) */
+    width: 100px;  /*points to total width */
     height: 100px;
     box-sizing: border-box;
 }
@@ -367,7 +370,16 @@ The clear property specifies on which sides of an element floating elements are 
 </style>
  ...
 ```
-
+### Alignment for center
+`margin: auto`;\
+Setting the width of the element will prevent it from stretching out to the edges of its container.\
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+```html
+<style>
+    /* #main_header { width: 60; margin:auto;} */
+   #main_header { width:960px; margin:0 auto;}
+</style>
+```
 ## Font
 #### font-size,style and weight
 ```html
