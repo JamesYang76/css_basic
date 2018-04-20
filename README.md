@@ -5,8 +5,12 @@
 ```html
 <head>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
-  @import url(yourstyle.css)
 </head>
+```
+```html
+<style>
+  @import url(yourstyle.css)
+</style> 
 ```
 ### Internal Style Sheet
 ```html
@@ -467,8 +471,17 @@ default value is `normal`
 ```   
 #### text-align
 describe how inline content like text is aligned in its parent block element
-value is `left, right,center,justify`\
+value is `left, right,center,justify`
 
+## media
+### media property
+#### meda
+```html
+<head>
+  <link rel="stylesheet" href="desktop.css" media="screen"/>
+  <link rel="stylesheet" href="print.css" media="print"/>
+</head>
+```
 
 ## Tips
 ### Button with a tag
@@ -488,7 +501,6 @@ value is `left, right,center,justify`\
    <li><a href="#">HTML5</a></li>
 </ul>
 ```
-
 ### Ellipsis
 `white-sapce, overflow and text-overflow` come togather nomally
 ```html
@@ -503,5 +515,4 @@ value is `left, right,center,justify`\
 }
 </style>
 ```
-
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
