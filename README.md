@@ -432,5 +432,41 @@ default value is `normal`
 ```   
 #### text-align
 describe how inline content like text is aligned in its parent block element
-value is `left, right,center,justify`
+value is `left, right,center,justify`\
+
+
+## Tips
+### Button with a tag
+```html
+<style>
+   li { list-style:none;}
+   a { text-decoration:none;}
+   ul { overflow: hidden;}
+   ul > li { float: left;}
+   ul > li > a {
+      display:block; padding: 2px 10px;
+      border: 1px solid black;
+   }
+</style>
+<ul>
+   <li><a href="#">HTML</a></li>
+   <li><a href="#">HTML5</a></li>
+</ul>
+```
+
+### Ellipsis
+`white-sapce, overflow and text-overflow` come togather nomally
+```html
+<style>
+.dexription {
+   display: block;
+   width:120px;
+   
+   white-sapce:norap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+</style>
+```
+
 Refer to: https://developer.mozilla.org/en-US/docs/Learn/CSS
