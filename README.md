@@ -462,7 +462,7 @@ value is `left, right,center,justify`\
    display: block;
    width:120px;
    
-   white-sapce:norap;
+   white-sapce:nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
 }
