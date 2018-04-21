@@ -489,21 +489,63 @@ value is `left, right,center,justify`
  </style>
 
 ```
-
 ```html
-<style>d
+<style>
   @media screen {
     body {color: white;font-fmaily:serif}
   }
   @media print {
      h1{ text-align: center }
-  }
+  } 
+</style>
+  
 ```
 ### viewport
 The viewport is the user's visible area of a web page.\
 The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+```
+
+### responsible
+#### screen size
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+  @media screen and (max-width: 767px) {
+    html{ background:red; }
+  }
+  @media screen and (min-width: 768px) and (max-width:959px) {
+      html{  background:blue; } 
+  }
+  @media screen and (min-width:960px) {
+      html{ background:green; }
+  }
+</style>  
+ ```
+ ####  orientation
+ confirm screen orientation
+ ```html
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <style>
+  @media screen and (orientation: portrait) {
+      html{  background:red; }
+  }
+  @media screen and (orientation: landscape) {
+      html{ background:green; }
+  }
+  </style>
+```
+#### ratio
+check ratina display
+ ```html
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <style>
+  @media screen and (-webkit-min-device-pixel-ratio:2) {
+    html{ background:red; }
+  }
+ 
+  </style>
 ```
 ## Tips
 ### Button with a tag
