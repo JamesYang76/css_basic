@@ -482,7 +482,29 @@ value is `left, right,center,justify`
   <link rel="stylesheet" href="print.css" media="print"/>
 </head>
 ```
+```html
+<style>
+  @import url(desktop.css) screen;
+  @import url(print.css) print;
+ </style>
 
+```
+
+```html
+<style>d
+  @media screen {
+    body {color: white;font-fmaily:serif}
+  }
+  @media print {
+     h1{ text-align: center }
+  }
+```
+### viewport
+The viewport is the user's visible area of a web page.\
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+```
 ## Tips
 ### Button with a tag
 ```html
