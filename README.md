@@ -306,6 +306,18 @@ div#two {
 }
 </style>
 ```
+#### Magin Collapse
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+```html
+<style>
+h1 { margin: 0 0 50px 0;}
+
+h2 { margin: 20px 0 0 0; }
+</style>
+
+<h1>Heading 1</h1>  <!-- margin between h1 and h2 is 50px-->
+<h2>Heading 2</h2>
+```
 
 ## CSS Positioning
 ### position
