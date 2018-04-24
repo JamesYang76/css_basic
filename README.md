@@ -473,6 +473,19 @@ default value is `normal`
 describe how inline content like text is aligned in its parent block element
 value is `left, right,center,justify`
 
+#### white-sapce
+`pre`: Lines are only broken at newline characters in the source and at <br> elements.\
+`normal` : Default, Lines are only broken at newline characters in the source and at <br> elements.\
+`nowrap`: Suppresses line breaks (text wrapping) within the source.
+```html
+<style>
+p.a { white-space: nowrap; }
+p.b { white-space: normal; }
+p.c { white-space: pre;}
+</style>
+```
+
+
 ## media
 ### media property
 #### meda
