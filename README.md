@@ -363,8 +363,8 @@ body > div {
 ```
 ### float
 #### left and right
-If a elment has `float` and the next element has no `float`, the next elment width includes the width of the element which has the float because block takes place whole line.\
-If a elment and the next element have `float`, the next elment width does not take whole line.
+If an element has `float` and the next element has no `float`, the next element width includes the width of the element which has the float because block takes place whole line.\
+If an element and the next element have `float`, the next elment width does not take whole line.
 ```html
 <style>
  .float_left {float: left;}
@@ -379,7 +379,7 @@ If a elment and the next element have `float`, the next elment width does not ta
 <div class="float_right box blue"></div>
 ```
 #### One true layout
-`overflow:hidden` should be applied to the parent whose child has float property.
+`overflow:hidden` should be applied to the parent whose child has float property because parent cannot recognize height
 ```html
 <style>
    body {width:960px;margin:0 auto;}
